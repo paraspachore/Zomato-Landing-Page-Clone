@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
+body{
+    min-width: 310px;
+}
 .hero__section{
     /* background: url(./images/heroSectionBackground.png); */
     background-image: url(./images/heroSectionBackground.png);
@@ -28,7 +31,7 @@
     gap: 50px;
 }
 
-.navbar__menu__container .user__icon{
+.user__icon{
     height: 30px;
     width: 30px;
     border: 1px solid white;
@@ -45,25 +48,88 @@
     justify-content: center;
     align-items: center;
     gap: 32px;
-    height: calc(60vh, 60px);
-    margin-block: 10vh;
+    height: calc(50vh + 50px);
+    /* margin-block: 8vh; */
 }
 
 .hero__section_logo{
     width: 300px;
 }
 
+.hero__section_title{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.hero__section_input_container{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    min-width: 180px;
+    border-radius: 10px;
+}
+
+.input_container_location, .input_container_search{
+    padding: 6px;
+    border: none;
+    /* width: 80%; */
+    min-width: 80px;
+    outline: none;
+}
+
+.input_container_location{
+    width: 35%;
+    border-right: 2px solid rgb(197, 197, 197);
+}
+
+.input_container_search{
+    width: 65%;
+}
 @media only screen and (max-width: 640px) {
-    .navbar__menu__container .user__icon{
+    .navbar{
         display: flex;
+        justify-content: space-between;
+        padding: 10px;
     }
-    .navbar a{
+    .navbar__menu__container{
         display: none;
+    }
+    .user__icon{
+        display: flex;
     }
     .hero__section{
         min-height: 80vh;
     }
-    .navbar{
-        padding: 16px;
+    .hero__section_container{
+        justify-content: flex-end;
+        /* height: calc(80vh + 60px); */
+        /* margin-block: 40vh; */
+    }
+    .hero__section_logo{
+        width: 160px;
+    }
+    .hero__section_title{
+        font-size: 20px;
+        width: 90%;
+    }
+    .hero__section_input_container{
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+    .input_container_location, .input_container_search{
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 95%;
+        min-width: 80px;
+        border: none;
+        outline: none;
     }
 }
