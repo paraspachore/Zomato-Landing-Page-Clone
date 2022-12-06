@@ -91,7 +91,54 @@ body{
 .input_container_search{
     width: 65%;
 }
-@media only screen and (max-width: 640px) {
+
+/* Section 2 (we offer) */
+.section__we_offer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.we__offer_card{
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden ;
+    transition: all 0.4s ease;
+}
+
+.we__offer_card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.we__offer_card img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.we__offer_card_content{
+    padding: 10px;
+}
+
+.we__offer_card_content h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we__offer_card_content p{
+    font-size: 12px;
+    /* font-weight: 400; */
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
     .navbar{
         display: flex;
         justify-content: space-between;
