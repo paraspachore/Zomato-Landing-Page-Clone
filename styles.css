@@ -7,12 +7,17 @@
 
 body {
     min-width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main {
     /* margin-inline: 18vw; */
     /* margin-inline: 10%; */
     /* width: 70vw; */
+    width: 100%;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,6 +26,7 @@ body {
 
 .hero__section {
     /* background: url(./images/heroSectionBackground.png); */
+    width: 100%;
     background-image: url(./images/heroSectionBackground.png);
     min-height: 60vh;
     background-size: cover;
@@ -114,13 +120,12 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-
     width: 100%;
     margin: 3rem auto;
 }
 
 .we__offer_card {
-    width: 25%;
+    width: 30%;
     height: 16rem;
     border: 0.5px solid rgb(230, 230, 230);
     border-radius: 10px;
@@ -308,5 +313,12 @@ body {
         min-width: 80px;
         border: none;
         outline: none;
+    }
+
+    /* we offer card */
+
+    .we__offer_card{
+        min-width: 150px;
+        height: 282px;
     }
 }
