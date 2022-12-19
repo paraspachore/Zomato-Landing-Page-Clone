@@ -156,34 +156,104 @@ body {
 /* collections */
 .section__collections {
     
-    max-width: 1000px;
+    max-width: 1200px;
+}
+
+.collections_heading{
+    font-size: 36px;
+    font-weight: 400;
 }
 
 .collections_subHeading{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.collections_subHeading span:last-child{
+    color: #ff7e8b;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .collections_card_container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
 
 .collections_card{
-    width: 300px;
-    height: 400px;
+    min-width: 270px;
+    height: 330px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
 }
 
-.collections_card img{
+#collection_card1{
+    background-image: url("./images/collection1.jpg");
+}
+#collection_card2{
+    background-image: url("./images/collection2.jpg");
+}
+#collection_card3{
+    background-image: url("./images/collection3.jpg");
+}
+#collection_card4{
+    background-image: url("./images/collection4.jpg");
+}
+
+.collections_card .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.05) 50%,
+        rgba(0, 0, 0, 0.05) 85%
+    );
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.8rem;
+}
+
+.content h4{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.content span{
+    font-size: 14px;
+}
+
+/* .collections_card img{
     height: 250px;
     width: 200px;
     border-radius: 10px;
     align-content: center;
     object-fit: cover;
     object-position: center;
-}
+} */
 
 /* media queries */
 @media only screen and (max-width: 600px) {
