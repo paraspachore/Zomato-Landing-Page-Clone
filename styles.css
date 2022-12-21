@@ -19,7 +19,8 @@ body {
     width: 100%;
     max-width: 1100px;
 }
-
+/* ----------------------------------------------------------------------------- */
+/* hero section */
 .hero__section {
     /* background: url(./images/heroSectionBackground.png); */
     width: 100%;
@@ -108,7 +109,7 @@ body {
 .input_container_search {
     width: 65%;
 }
-
+/* ------------------------------------------------------------------------------------ */
 /* Section 2 (we offer) */
 .section__we_offer {
     display: flex;
@@ -195,7 +196,7 @@ body {
 }
 
 .collections_card{
-    min-width: 270px;
+    min-width: 269px;
     height: 330px;
     background-size: cover;
     background-position: center;
@@ -284,7 +285,8 @@ body {
     justify-content: space-between;
     border: 1px solid grey;
     border-radius: 5px;
-    min-width: 30%;
+    width: 30%;
+    min-width: 130px;
     padding: 5px;
 }
 
@@ -299,6 +301,137 @@ body {
     align-items: center;
 }
 
+/* ------------------------------------------------------------------------- */
+/* Section Get_the_App */
+
+.section__get_the_app{
+    width: 100vw;
+    padding: 0.5rem 0;
+    background-color: #FFFBF7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.get_the_app_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 740px;
+    height: 480px;
+}
+
+.get_the_app_container .left{
+    width: 250px;
+}
+
+.get_the_app_container .left img{
+    /* min-width: 250px; */
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get_the_app_container .right{
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.get_the_app_container .right h1{
+    font-weight: 400;
+    font-size: 44px;
+}
+
+.get_the_app_container .right p{
+    font-size: 16px;
+}
+
+.get_the_app_container .right .email_phone{
+    display: flex;
+    gap: 2rem;
+}
+
+.get_the_app_container .right .email_phone div{
+    /* height: 15%;
+    width: 15%; */
+    accent-color: rgb(239, 79, 95);
+}
+
+.share_app_link{
+    width: 100%;
+}
+
+.share_app_link .input_container{
+    display: flex;
+    gap: 0.5rem;
+    padding: 10px 12px;
+}
+
+.share_app_link .input_container input{
+    flex: auto;
+    /* gap: 0.5rem; */
+    padding: 10px;
+    border: 1.5px solid rgb(221, 221, 221);
+    border-radius: 7px;
+    outline: none;
+}
+
+.share_app_link button{
+    color: white;
+    background-color: rgb(224, 53, 70);
+    padding: 10px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 7px;
+}
+
+.dwnld_app_from p{
+    font-size: 14px;
+}
+
+.dwnld_app_from .tiles img{
+    width: 137px;
+}
+
+
+
+
+/* media queries for get the app section */
+@media only screen and (max-width: 540px) {
+    .get_the_app_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .get_the_app_container .left{
+        display: none;
+    }
+    .get_the_app_container .right{
+        font-size: 16px;
+        height: 100%;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 1.2rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------ */
 /* media queries */
 @media only screen and (max-width: 600px) {
     .navbar {
