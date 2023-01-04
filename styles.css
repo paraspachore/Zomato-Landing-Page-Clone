@@ -739,6 +739,10 @@ body {
         padding-bottom: 3rem;
     }
 
+    .hero__section_input_container a{
+        display: none;
+    }
+
     .input_container_location,
     .input_container_search {
         background-color: white;
